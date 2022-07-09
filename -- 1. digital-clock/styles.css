@@ -24,11 +24,55 @@ body {
 /**************************/
 .heading {
   font-size: 2.4rem;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 3.5px;
   line-height: 1.2;
   text-transform: capitalize;
   margin-bottom: 2.4rem;
+}
+
+.clock-box {
+  font-size: 4.4rem;
+  font-weight: 900;
+  gap: 1.4rem;
+}
+.hours-box,
+.minutes-box,
+.seconds-box {
+  font-size: 4.4rem;
+  background-color: rgba(229, 159, 9, 0.451);
+  border-radius: 11px;
+  /* padding: 1rem; */
+  box-shadow: 15px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.ampm {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  align-self: flex-end;
+  background-color: rgb(0, 87, 0);
+  padding: 0.5rem 1rem;
+  box-shadow: 15px 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+}
+
+.hours,
+.minutes,
+.seconds {
+  font-size: 2.4rem;
+  font-weight: 400;
+  background-color: rgb(229, 159, 9);
+  padding: 0.5rem 1rem;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+
+.h,
+.min,
+.s {
+  text-align: center;
+  padding: 1rem 0;
 }
 
 /**************************/
