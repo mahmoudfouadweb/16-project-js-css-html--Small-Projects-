@@ -23,7 +23,6 @@ body {
 /* GENERAL  COMPONENT STYLES */
 /**************************/
 .container {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
