@@ -18,7 +18,28 @@ function randomNumber() {
 
 // multiply function
 function mulitply() {
-  one.textContent = randomNumber();
-  two.textContent = randomNumber();
+  const first = randomNumber();
+  const second = randomNumber();
+  console.log(answer);
+  one.textContent = first;
+  two.textContent = second;
+  return first * second;
 }
-mulitply();
+let result = mulitply();
+console.log('result', result);
+
+btn.addEventListener('click', function (e) {
+  // e.preventDefault();
+  let userInput = Number(answer.value);
+  let userScore = 0;
+  if (result == userInput) {
+    console.log('true');
+    userScore++;
+    score.textContent = userScore;
+    mulitply();
+    console.log(result);
+  } else {
+    console.log('false');
+    userScore--;
+  }
+});
