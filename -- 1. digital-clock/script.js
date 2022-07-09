@@ -8,16 +8,17 @@ function updateTime() {
   let hours = new Date().getHours(),
     minute = new Date().getMinutes(),
     second = new Date().getSeconds();
-  h.textContent = hours;
-  min.textContent = minute;
-  s.textContent = second;
+
   let amPm = 'AM';
   if (hours > 12) {
-    hours -= 12;
+    hours = hours - 12;
     amPm = 'PM';
   } else {
     amPm = 'AM';
   }
+  h.textContent = hours;
+  min.textContent = minute;
+  s.textContent = second;
   ampm.textContent = amPm;
 }
 // console.log(hours, minute, second);
