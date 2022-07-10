@@ -18,13 +18,79 @@ body {
 /**************************/
 /* STYLES */
 /**************************/
+.heading {
+  background-color: #eee;
+  padding: 2.8rem;
+  border-radius: 1.1rem;
+}
 
+.heading-primary {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #1c2b2d;
+  margin-bottom: 1.8rem;
+}
+
+.color-box {
+  margin-bottom: 1.2rem;
+}
+
+.color-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #777;
+  margin-right: 1.8rem;
+}
+
+.code {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #db6400;
+  cursor: pointer;
+}
+
+.copied {
+  /* display: inline-block; */
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  color: green;
+  background-color: springgreen;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  align-self: center;
+  margin-bottom: 2.8rem;
+}
+
+.btn {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  padding: 0.8rem 1.6rem;
+  background-color: #db6400;
+  border-radius: 1.1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background-color: #9c4600;
+  color: #fff;
+}
 /**************************/
 /* GENERAL  COMPONENT STYLES */
 /**************************/
 .container {
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .flex {
