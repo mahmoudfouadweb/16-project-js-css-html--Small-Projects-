@@ -2,7 +2,6 @@
 
 // GENERAL VARIABLES
 const code = document.querySelector('.code'),
-  copied = document.querySelector('.copied'),
   btn = document.querySelector('.btn'),
   arr = 'abcdef0123456789';
 
@@ -19,5 +18,10 @@ btn.addEventListener('click', () => {
 });
 code.addEventListener('click', e => {
   navigator.clipboard.writeText(code.textContent);
-  copied.style.opacity = 1;
+
+  setTimeout(() => {
+    document.querySelector('.copied').style.opacity = 0;
+  }, 2000);
+
+  document.querySelector('.copied').style.opacity = 1;
 });

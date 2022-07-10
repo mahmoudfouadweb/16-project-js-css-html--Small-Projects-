@@ -51,6 +51,11 @@ body {
   letter-spacing: 2px;
   color: #db6400;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.code:hover {
+  color: #9c4600;
 }
 
 .copied {
