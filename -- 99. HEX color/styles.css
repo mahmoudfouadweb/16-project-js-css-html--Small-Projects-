@@ -34,6 +34,7 @@ body {
 
 .color-box {
   margin-bottom: 1.2rem;
+  padding-left: 2rem;
 }
 
 .color-name {
@@ -53,7 +54,7 @@ body {
 }
 
 .copied {
-  /* display: inline-block; */
+  opacity: 0;
   font-size: 1.2rem;
   font-weight: 400;
   text-align: center;

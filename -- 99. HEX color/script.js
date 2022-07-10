@@ -1,2 +1,3 @@
 'use strict';
-console.log('hi there');
+
+const arr = ['a', 'b', 'c', 'd', 'e', 'f', '1', '2', '3', '4', '5', '6'];
