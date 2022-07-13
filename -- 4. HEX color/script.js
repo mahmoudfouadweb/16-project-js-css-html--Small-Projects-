@@ -5,6 +5,16 @@ const code = document.querySelector('.code'),
   btn = document.querySelector('.btn'),
   arr = 'abcdef0123456789';
 
+//button effect
+
+btn.addEventListener('mouseover', e => {
+  const y = e.clientY - btn.offsetTop;
+  const x = e.pageX - btn.offsetLeft;
+  console.log(y, x);
+  btn.style.setProperty('--xPos', x + 'px');
+  btn.style.setProperty('--yPos', y + 'px');
+});
+
 // click event
 btn.addEventListener('click', () => {
   let hash = '#';
