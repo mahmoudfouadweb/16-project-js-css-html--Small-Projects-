@@ -18,7 +18,72 @@ body {
 /**************************/
 /* STYLES */
 /**************************/
+.nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem 1.2rem;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  transition: all 0.3s;
+}
 
+.logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: brown;
+  text-transform: capitalize;
+}
+
+.list {
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  gap: 1rem;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
+}
+.nav.active .link:link,
+.nav.active .link:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link:active,
+.link:hover {
+  color: brown;
+}
+
+.hero {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.active {
+  padding: 2.4rem 1.2rem;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 1rem;
+  background-color: #000;
+}
+
+.first {
+  font-size: 2.4rem;
+  padding: 0 2.4rem;
+  margin-bottom: 2.8rem;
+}
 /**************************/
 /* GENERAL  COMPONENT STYLES */
 /**************************/
