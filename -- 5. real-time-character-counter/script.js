@@ -7,8 +7,12 @@ const total = document.querySelector('.total');
 const remaining = document.querySelector('.remaining');
 
 // function
-text.addEventListener('input', e => {
-  let totl = 50;
-
-  console.log(e.target.value);
+const counter = function () {
+  const max = text.getAttribute('maxlength');
+  remaining.textContent = max - text.value.length;
+  total.textContent = text.value.length;
+};
+counter();
+text.addEventListener('input', () => {
+  counter();
 });
