@@ -56,8 +56,8 @@ body {
   color: #fff;
 }
 
-.link:active,
-.link:hover {
+.nav.active .link:active,
+.nav.active .link:hover {
   color: brown;
 }
 
@@ -70,7 +70,6 @@ body {
 .active {
   padding: 2.4rem 1.2rem;
   position: fixed;
-  background-color: #fff;
   width: 100%;
   justify-content: space-between;
   align-items: center;
