@@ -13,18 +13,63 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 1;
+  background-color: rgb(255, 117, 117);
 }
 
 /**************************/
 /* STYLES */
 /**************************/
+.main {
+  background-color: tomato;
+  padding: 2.4rem 1.2rem;
+  border-radius: 11px;
+  width: 42rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
 
+.heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  text-transform: capitalize;
+}
+
+.text {
+  width: 100%;
+  height: 9rem;
+  border-radius: 11px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.character-box {
+  justify-content: space-between;
+  padding: 0 0.4rem;
+}
+
+.total,
+.remaining {
+  font-size: 1.2rem;
+  color: #ddd;
+  text-transform: capitalize;
+}
+
+.total span {
+  color: blue;
+}
+
+.remaining span {
+  color: green;
+}
 /**************************/
 /* GENERAL  COMPONENT STYLES */
 /**************************/
 .container {
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .flex {
