@@ -1,33 +1,41 @@
 /**************************/
 /* GENERAL  SETTING */
 /**************************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
-  /* 10px  / 16px  * 100  = 62.5% */
-  font-size: 62.5%;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  line-height: 1;
+  margin: 0;
+  height: 100vh;
   background-color: #000;
+  overflow: hidden;
 }
 
 /**************************/
 /* STYLES */
 /**************************/
-.main {
+span {
   background-image: url(https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-256.png);
   width: 10rem;
   height: 10rem;
   position: absolute;
+  pointer-events: none;
   background-size: cover;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: animate 6s linear;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -5000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
 }
 /**************************/
 /* GENERAL  COMPONENT STYLES */
