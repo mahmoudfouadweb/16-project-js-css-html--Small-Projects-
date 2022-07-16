@@ -22,10 +22,19 @@
         <h1 class="heading-primary">welcome to our website</h1>
         <button class="btn">click to join</button>
       </header>
-      <section class="pop-up--modal">
+
+      <!-- pop-up--modal -->
+
+      <section class="pop-up--modal flex flex-column">
         <div class="modal-heading">20% OFF Offer</div>
         <form>
-          <input class="input" type="email" />
+          <p class="email-label">your email</p>
+          <input
+            name="email"
+            class="input"
+            type="email"
+            placeholder="enter your email"
+          />
           <button class="modal-btn">Join</button>
         </form>
         <ion-icon class="icon" name="close-outline"></ion-icon>
