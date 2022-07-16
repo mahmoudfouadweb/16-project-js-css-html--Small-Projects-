@@ -17,9 +17,27 @@
     <title>blurred background popup</title>
   </head>
   <body>
-    <header class="heading-main">
-      <h1 class="heading-primary">welcome to our website</h1>
-      <button class="btn">click to join</button>
-    </header>
+    <div class="container flex">
+      <header class="heading-main flex flex-column">
+        <h1 class="heading-primary">welcome to our website</h1>
+        <button class="btn">click to join</button>
+      </header>
+      <section class="pop-up--modal">
+        <div class="modal-heading">20% OFF Offer</div>
+        <form>
+          <input class="input" type="email" />
+          <button class="modal-btn">Join</button>
+        </form>
+        <ion-icon class="icon" name="close-outline"></ion-icon>
+      </section>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
