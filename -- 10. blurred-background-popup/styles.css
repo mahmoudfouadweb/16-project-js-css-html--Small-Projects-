@@ -63,6 +63,8 @@ body {
 }
 
 .pop-up--modal.active {
+  transition: all 0.3s;
+  /* top: 10%; */
   z-index: 1;
 }
 
